@@ -21,6 +21,16 @@ class CreatePostsTable extends Migration
             $table->date('dtNasc');
             $table->boolean('ativo');
             $table->string('ra',10);
+            // $table->string('nomeProf',100);
+            // $table->string('emailProf',100);
+            // $table->string('telefoneProf',30);
+            // $table->string('nRegistro',10);
+            // $table->string('titulacao');
+            // $table->string('tituloAula',100);
+            // $table->string('curso');
+            // $table->string('profAula',100);
+            // $table->date('dtAulaProf');
+            // $table->double('qtdHrsAula');
             $table->timestamps();
         });
     }
