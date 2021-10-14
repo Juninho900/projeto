@@ -13,7 +13,7 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('cadastro', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('nome', 100);
             $table->string('email', 100);
@@ -21,13 +21,6 @@ class CreatePostsTable extends Migration
             $table->date('dtNasc');
             $table->boolean('ativo');
             $table->string('ra',10);
-            $table->string('nomeProf', 100);
-            $table->string('emailProf', 100);
-            $table->string('telefoneProf', 30);
-            $table->string('numReg', 30);
-            $table->string('titulacao', 30);
-            $table->string('tituloAula', 100);
-            $table->string('curso', 50);
             $table->timestamps();
         });
     }
@@ -39,6 +32,6 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cadastro');
+        Schema::dropIfExists('post');
     }
 }
