@@ -1,11 +1,15 @@
-<h1>Detalhes do aluno {{ $post->nome }}</h1>
+<h1>Informação do(a) aluno(a) {{ $post->nome }}</h1>
 
 <ul>
-    <li>{{ $post->id }}</li>
-    <li>{{ $post->nome }}</li>
-    <li>{{ $post->email }}</li>
-    <li>{{ $post->telefone }}</li>
-    <li>{{ $post->dtNasc }}</li>
-    <li>{{ $post->ativo }}</li>    
-    <li>{{ $post->ra }}</li>
+    <li><strong>E-mail:</strong> {{ $post->email }}</li>
+    <li><strong>Telefone:</strong> {{ $post->telefone }}</li>
+    <li><strong>Data de nascimento:</strong> {{ $post->dtNasc }}</li>
+    <li><strong>Situação:</strong> {{ $post->ativo }}</li>    
+    <li><strong>RA:</strong> {{ $post->ra }}</li>
 </ul>
+
+<form action="{{ route('posts.destroy', $post->id) }}" method="post">
+    @csrf
+    <input type="hidden" name="_method" value="DELETE">
+    <button type="submit">Remover</button>
+</form>
