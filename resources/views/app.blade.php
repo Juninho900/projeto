@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <title>Index</title>
+    <title>@yield('title') {{ config('app.name') }}</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -31,7 +31,7 @@
                 <div class="sidebar-wrapper">
                     <ul class="nav">
                         <li class="nav-item active  ">
-                            <a class="nav-link" href="{{ route('posts.index') }}">
+                            <a class="nav-link" href="{{ route('alunos.index') }}">
                                 <i class="material-icons">home</i>
                                 <p>Início</p>
                             </a>
@@ -41,11 +41,11 @@
                 </div>
             </div>
             <div class="main-panel">
-                <!-- Navbar -->
+                <!-- Navbar
                 <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
                     <div class="container-fluid">
                         <div class="navbar-wrapper">
-                            <!-- <a class="navbar-brand" href="javascript:;">Dashboard</a> -->
+                            <a class="navbar-brand" href="javascript:;">Dashboard</a>
                         </div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="sr-only">Toggle navigation</span>
@@ -60,11 +60,11 @@
                                         <i class="material-icons">notifications</i> Notificações
                                     </a>
                                 </li>
-                                <!-- your navbar here -->
+                                your navbar here
                             </ul>
                         </div>
                     </div>
-                </nav>
+                </nav> -->
                 <!-- End Navbar -->
                 <div class="content">
 
