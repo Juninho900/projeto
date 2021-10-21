@@ -33,7 +33,7 @@
                         <li class="nav-item active  ">
                             <a class="nav-link" href="{{ route('alunos.index') }}">
                                 <i class="material-icons">home</i>
-                                <p>Início</p>
+                                <p><b>INÍCIO</b></p>
                             </a>
                         </li>
                         <!-- your sidebar here -->
@@ -71,7 +71,6 @@
                     <div class="container-fluid">
                         <!-- your content here -->
                         @yield('index')
-                        @yield('login')
                         @yield('create')
                         @yield('show')
                         @yield('edit')
