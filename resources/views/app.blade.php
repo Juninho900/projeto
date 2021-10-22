@@ -71,9 +71,17 @@
                     <div class="container-fluid">
                         <!-- your content here -->
                         @yield('index')
+                        @yield('index2')
+                        @yield('index3')
                         @yield('create')
+                        @yield('create2')
+                        @yield('create3')
                         @yield('show')
+                        @yield('show2')
+                        @yield('show3')
                         @yield('edit')
+                        @yield('edit2')
+                        @yield('edit3')
 
                     </div>
                 </div>

@@ -10,4 +10,6 @@ class Aula extends Model
     use HasFactory;
 
     protected $table = 'aulas';
+
+    protected $fillable = ['tituloAula', 'curso', 'profAula', 'dtAulaProf', 'qtdHrsAula'];
 }
