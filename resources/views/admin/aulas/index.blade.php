@@ -54,7 +54,6 @@
                     </div>
                 </div>
             </p>
-            <hr>
         @endforeach
 
         @if (isset($filters))
