@@ -9,7 +9,7 @@
 <body>
     @extends('app')
 
-    @section('index')
+    @section('index3')
         <h1>Início</h1>
 
         @if (session('message'))
@@ -21,7 +21,7 @@
             <div class="col-8">
                 <a href="{{ route('aulas.create') }}">
                     <button type="button" class="btn btn-danger">
-                        Criar nova conta para aula
+                        Criar nova aula
                     </button>
                 </a>
             </div>

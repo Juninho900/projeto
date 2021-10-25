@@ -32,8 +32,20 @@
                     <ul class="nav">
                         <li class="nav-item active  ">
                             <a class="nav-link" href="{{ route('alunos.index') }}">
-                                <i class="material-icons">home</i>
-                                <p><b>INÍCIO</b></p>
+                                <i class="material-icons">people</i>
+                                <p><b>ALUNOS</b></p>
+                            </a>
+                        </li>
+                        <li class="nav-item active  ">
+                            <a class="nav-link" href="{{ route('professors.index') }}">
+                                <i class="material-icons">people</i>
+                                <p><b>PROFESSORES</b></p>
+                            </a>
+                        </li>
+                        <li class="nav-item active  ">
+                            <a class="nav-link" href="{{ route('aulas.index') }}">
+                                <i class="material-icons">event</i>
+                                <p><b>AULAS</b></p>
                             </a>
                         </li>
                         <!-- your sidebar here -->

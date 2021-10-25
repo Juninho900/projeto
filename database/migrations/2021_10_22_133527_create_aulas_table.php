@@ -13,7 +13,8 @@ class CreateAulasTable extends Migration
      */
     public function up()
     {
-        Schema::create('aulas', function (Blueprint $table) {
+        Schema::create('aulas', function (Blueprint $table) 
+        {
             $table->id();
             $table->string('tituloAula',100);
             $table->string('curso');

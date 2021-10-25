@@ -52,7 +52,7 @@ class ProfessorController extends Controller
 
     public function edit($id)
     {
-        if(!$aluno = Professor::find($id)) {
+        if(!$professor = Professor::find($id)) {
             return redirect()->back();
         }
 

@@ -13,7 +13,7 @@ class StoreUpdateAula extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -23,8 +23,13 @@ class StoreUpdateAula extends FormRequest
      */
     public function rules()
     {
-        return [
-            //
+        return
+        [
+            'tituloAula' => 'required|min:3|max:100',
+            'curso' => 'required|min:3|max:100',
+            'profAula' => 'required|min:3|max:100',
+            'dtAulaProf' => 'required',
+            'qtdHrsAula' => 'required'
         ];
     }
 }
