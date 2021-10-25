@@ -1,4 +1,4 @@
-@extends('dashboard')
+@extends('dash')
 
 @section('show')
     <h1>Informação do(a) aluno(a) {{ $aluno->nome }}</h1>

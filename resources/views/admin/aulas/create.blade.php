@@ -1,4 +1,4 @@
-@extends('dashboard')
+@extends('dash')
 
 @section('create3')
     <h1>Criar uma nova aula</h1>

@@ -50,47 +50,18 @@
         </div>
         <div class="main-panel">
             <div class="container-fluid">
-                <div class="card-header card-header-danger">
-                    <h1">Tabela</h1>
-                </div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead class=" text-danger">
-                                <th>
-                                    Nome
-                                </th>
-                                <th>
-                                    Salário
-                                </th>
-                                <th>
-                                    Quantidades de aulas por mês
-                                </th>
-                                <th>
-                                    Valor por hora aula do(a) professor(a)
-                                </th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        Fulana
-                                    </td>
-                                    <td>
-                                        R$6.738,54
-                                    </td>
-                                    <td>
-                                        8
-                                    </td>
-                                    <td>
-                                        R$25,00
-                                    </td>
-                                </tr>
-                                <tr>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                @yield('index')
+                @yield('index2')
+                @yield('index3')
+                @yield('create')
+                @yield('create2')
+                @yield('create3')
+                @yield('show')
+                @yield('show2')
+                @yield('show3')
+                @yield('edit')
+                @yield('edit2')
+                @yield('edit3')
             </div>
             <footer class="footer">
                 <div class="container-fluid">

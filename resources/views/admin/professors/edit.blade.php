@@ -1,4 +1,4 @@
-@extends('dashboard')
+@extends('dash')
 
 @section('edit2')
     <h1>Editar a informação do(a) professor(a) {{ $professor->nomeProf }}</h1>

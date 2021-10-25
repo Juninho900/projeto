@@ -1,4 +1,4 @@
-@extends('dashboard')
+@extends('dash')
 
 @section('show3')
     <h1>Informação da aula de {{ $aula->tituloAula }}</h1>

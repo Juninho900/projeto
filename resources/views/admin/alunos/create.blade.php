@@ -1,4 +1,4 @@
-@extends('dashboard')
+@extends('dash')
 
 @section('create')
     <h1>Criar uma nova conta para aluno(a)</h1>
