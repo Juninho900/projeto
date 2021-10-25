@@ -1,4 +1,4 @@
-@extends('app')
+@extends('dashboard')
 
 @section('edit')
     <h1>Editar a informação do(a) aluno(a) {{ $aluno->nome }}</h1>
@@ -29,6 +29,6 @@
             </p>
         </div>
         <p>RA: <input type="text" name="ra" id="ra" value="{{ $aluno->ra }}"></p>
-        <button type="submit">Atualizar</button>
+        <button type="submit" class="btn btn-danger">Atualizar</button>
     </form>
 @endsection

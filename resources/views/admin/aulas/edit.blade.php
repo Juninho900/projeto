@@ -1,4 +1,4 @@
-@extends('app')
+@extends('dashboard')
 
 @section('edit3')
     <h1>Editar a informação da aula {{ $aula->nome }}</h1>
@@ -28,6 +28,6 @@
         <p>Aula do professor: <input type="text" name="profAula" id="profAula" value="{{ $aula->profAula }}"></p>
         <p>Data da aula: <input type="date" name="dtAulaProf" id="dtAulaProf" value="{{ $aula->dtAulaProf }}"></p>
         <p>Quantidade de horas por aula: <input type="time" name="qtdHrsAula" id="qtdHrsAula" value="{{ $aula->qtdHrsAula }}"></p>
-        <button type="submit">Atualizar</button>
+        <button type="submit" class="btn btn-danger">Atualizar</button>
     </form>
 @endsection

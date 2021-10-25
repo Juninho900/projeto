@@ -1,4 +1,4 @@
-@extends('app')
+@extends('dashboard')
 
 @section('create2')
     <h1>Criar uma nova conta para professor(a)</h1>
@@ -23,6 +23,7 @@
             <option value="Mestrado(a)">Mestrado</option>
             <option value="Doutorado(a)">Doutorado</option>
         </select>
-        <button type="submit">Cadastrar</button>
+        <br>
+        <button type="submit" class="btn btn-danger">Cadastrar</button>
     </form>
 @endsection

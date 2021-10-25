@@ -7,7 +7,7 @@
     <title>Início</title>
 </head>
 <body>
-    @extends('app')
+    @extends('dashboard')
 
     @section('index')
         <h1>Início</h1>

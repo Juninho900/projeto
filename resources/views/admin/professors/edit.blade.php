@@ -1,4 +1,4 @@
-@extends('app')
+@extends('dashboard')
 
 @section('edit2')
     <h1>Editar a informação do(a) professor(a) {{ $professor->nomeProf }}</h1>
@@ -26,6 +26,8 @@
             <option value="Mestrado(a)">Mestrado(a)</option>
             <option value="Doutorado(a)">Doutorado(a)</option>
         </select>
-        <button type="submit">Atualizar</button>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-danger">Atualizar</button>
     </form>
 @endsection

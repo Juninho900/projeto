@@ -1,4 +1,4 @@
-@extends('app')
+@extends('dashboard')
 
 @section('create')
     <h1>Criar uma nova conta para aluno(a)</h1>
@@ -26,6 +26,6 @@
             </p>
         </div>
         <p>RA: <input type="text" name="ra" id="ra" value="{{ old('ra') }}"></p>
-        <button type="submit">Cadastrar</button>
+        <button type="submit" class="btn btn-danger">Cadastrar</button>
     </form>
 @endsection

@@ -1,4 +1,4 @@
-@extends('app')
+@extends('dashboard')
 
 @section('show')
     <h1>Informação do(a) aluno(a) {{ $aluno->nome }}</h1>
@@ -14,6 +14,6 @@
     <form action="{{ route('alunos.destroy', $aluno->id) }}" method="post">
         @csrf
         <input type="hidden" name="_method" value="DELETE">
-        <button type="submit">Remover</button>
+        <button type="submit" class="btn btn-danger">Remover</button>
     </form>
 @endsection
