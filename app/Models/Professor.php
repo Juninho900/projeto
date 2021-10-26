@@ -11,5 +11,5 @@ class Professor extends Model
 
     protected $table = 'professors';
 
-    protected $fillable = ['nomeProf', 'emailProf', 'telefoneProf', 'nRegistro', 'titulacao'];
+    protected $fillable = ['nomeProf', 'emailProf', 'telefoneProf', 'nRegistro', 'titulacao', 'salario', 'qtdAulasMes', 'valorHrAulaProf'];
 }

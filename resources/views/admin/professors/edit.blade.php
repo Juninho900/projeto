@@ -26,6 +26,9 @@
             <option value="Mestrado(a)">Mestrado(a)</option>
             <option value="Doutorado(a)">Doutorado(a)</option>
         </select>
+        <p>Salário: <input type="text" name="salario" id="salario" value="{{ $professor->salario }}"></p>
+        <p>Quantidades de aulas por mês: <input type="text" name="qtdAulasMes" id="qtdAulasMes" value="{{ $professor->qtdAulasMes }}"></p>
+        <p>Valor por hora aula do(a) professor(a): <input type="text" name="valorHrAulaProf" id="valorHrAulaProf" value="{{ $professor->valorHrAulaProf }}"></p>
         <br>
         <br>
         <button type="submit" class="btn btn-danger">Atualizar</button>

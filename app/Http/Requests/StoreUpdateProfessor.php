@@ -23,12 +23,16 @@ class StoreUpdateProfessor extends FormRequest
      */
     public function rules()
     {
-        return [
+        return
+        [
             'nomeProf' => 'required|min:3|max:100',
             'emailProf' => 'required|min:3|max:100',
             'telefoneProf' => 'required|min:3|max:30',
             'nRegistro' => 'required|min:3|max:10',
-            'titulacao' => 'required'
+            'titulacao' => 'required',
+            'salario' => 'required|min:1|max:15',
+            'qtdAulasMes' => 'required|min:1|max:5',
+            'valorHrAulaProf' => 'required|min:1|max:10'
         ];
     }
 }

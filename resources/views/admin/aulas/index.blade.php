@@ -9,7 +9,7 @@
     @extends('dash')
 
     @section('index3')
-        <h1>Início</h1>
+        <h1>Aulas</h1>
 
         @if (session('message'))
             <div>

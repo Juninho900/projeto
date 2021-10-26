@@ -3,6 +3,7 @@
 use App\Http\Controllers\AlunoController;
 use App\Http\Controllers\AulaController;
 use App\Http\Controllers\ProfessorController;
+use App\Models\Professor;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware(['auth'])->group(function () {
@@ -46,7 +47,8 @@ Route::get('/', function ()
 
 Route::get('/dashboard', function ()
 {
-    return view('dashboard');
+    $professors = Professor::orderBy('nomeProf', 'ASC')->paginate();
+    return view('dashboard',compact('professors'));
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';

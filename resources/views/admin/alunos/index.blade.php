@@ -9,7 +9,7 @@
     @extends('dash')
 
     @section('index')
-        <h1>Início</h1>
+        <h1>Alunos</h1>
 
         @if (session('message'))
             <div>
@@ -32,7 +32,6 @@
                 </form>
             </div>
         </div>
-
         @foreach ($alunos as $aluno)
             <p>
                 <div class="row align-items-center">
@@ -53,8 +52,7 @@
                     </div>
                 </div>
             </p>
-        @endforeach
-
+        @endforeach 
         @if (isset($filters))
             {{ $alunos->appends(filters)->links() }}
         @else

@@ -50,9 +50,7 @@
         </div>
         <div class="main-panel">
             <div class="container-fluid">
-                <div class="card-header card-header-danger">
-                    <h1">Tabela</h1>
-                </div>
+                <h1>Tabela</h1>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table">
@@ -71,22 +69,22 @@
                                 </th>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>
-                                        Fulana
-                                    </td>
-                                    <td>
-                                        R$6.738,54
-                                    </td>
-                                    <td>
-                                        8
-                                    </td>
-                                    <td>
-                                        R$25,00
-                                    </td>
-                                </tr>
-                                <tr>
-                                </tr>
+                                @foreach ($professors as $professor)
+                                    <tr>
+                                        <td>
+                                            {{ $professor -> nomeProf }}
+                                        </td>
+                                        <td>
+                                            {{ $professor ->salario}} 
+                                        </td>
+                                        <td>
+                                            {{ $professor ->qtdAulasMes}}
+                                        </td>
+                                        <td>
+                                            {{ $professor->valorHrAulaProf}}
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
