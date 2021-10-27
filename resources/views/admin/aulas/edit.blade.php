@@ -28,7 +28,7 @@
         <label for="profAula"><p>Aula do professor: </p></label>
         <select name="profAula" id="profAula" value="{{ $aula->profAula }}">
             @foreach($professors as $professor)
-                <option value="{{ $professor->id }}" {{$company->shopping_id == $professor->id  ? 'selected' : ''}}>{{ $professor->nomeProf}}</option>
+                <option value="{{ $professor->id }}" {{$company->profAula == $professor->id  ? 'selected' : ''}}>{{ $professor->nomeProf}}</option>
             @endforeach
         </select>
         <p>Data da aula: <input type="date" name="dtAulaProf" id="dtAulaProf" value="{{ $aula->dtAulaProf }}"></p>

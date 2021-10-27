@@ -75,13 +75,13 @@
                                             {{ $professor -> nomeProf }}
                                         </td>
                                         <td>
-                                            {{ $professor ->salario}} 
+                                            R$ {{ $professor ->salario}} 
                                         </td>
                                         <td>
                                             {{ $professor ->qtdAulasMes}}
                                         </td>
                                         <td>
-                                            {{ $professor->valorHrAulaProf}}
+                                            R$ {{ $professor->valorHrAulaProf}}
                                         </td>
                                     </tr>
                                 @endforeach

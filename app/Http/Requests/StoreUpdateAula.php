@@ -27,7 +27,7 @@ class StoreUpdateAula extends FormRequest
         [
             'tituloAula' => 'required|min:3|max:100',
             'curso' => 'required|min:3|max:100',
-            'profAula' => 'required|min:3|max:100',
+            'profAula' => 'required',
             'dtAulaProf' => 'required',
             'qtdHrsAula' => 'required'
         ];

@@ -26,7 +26,7 @@
         <select name="profAula" id="profAula" value="{{ old('profAula') }}">
         <option value="option_select" disabled selected>Selecione um(a) professor(a)</option>
             @foreach($professors as $professor)
-                <option value="{{ $professor->id }}" {{$company->profAula == $professor->id  ? 'selected' : ''}}>{{ $professor->nomeProf}}</option>
+                <option value="{{$professor->id}}">{{ $professor->nomeProf}}</option>
             @endforeach
         </select>
         <p>Data da aula: <input type="date" name="dtAulaProf" id="dtAulaProf" value="{{ old('dtAulaProf') }}"></p>

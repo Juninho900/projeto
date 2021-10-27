@@ -5,8 +5,8 @@
 
     <ul>
         <li><strong>Curso: </strong> {{ $aula->curso }}</li>
-        <li><strong>Aula do professor: </strong> {{ $aula->profAula }}</li>
-        <li><strong>Data da aula: </strong> {{ $aula->dtAulaProf }}</li>
+        <li><strong>Aula do professor: </strong> {{ $aula->professor->nomeProf }}</li>
+        <li><strong>Data da aula: </strong> {{ date('d/m/Y', strtotime($aula->dtAulaProf)) }}</li>
         <li><strong>Quantidade de horas por aula: </strong> {{ $aula->qtdHrsAula }} horas por aula</li>
     </ul>
 

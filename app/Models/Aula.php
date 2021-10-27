@@ -12,4 +12,9 @@ class Aula extends Model
     protected $table = 'aulas';
 
     protected $fillable = ['tituloAula', 'curso', 'profAula', 'dtAulaProf', 'qtdHrsAula'];
+
+    public function professor(){
+
+        return $this->belongsTo('App\Models\Professor','profAula');
+    }
 }

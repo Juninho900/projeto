@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreUpdateAula;
 use App\Models\Aula;
+use App\Models\Professor;
 use Illuminate\Http\Request;
 
 class AulaController extends Controller
@@ -16,7 +17,8 @@ class AulaController extends Controller
 
     public function create()
     {
-        return view('admin.aulas.create');
+        $professors = Professor::all();
+        return view('admin.aulas.create',compact('professors'));
     }
 
     public function store(StoreUpdateAula $request)
