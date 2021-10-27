@@ -12,4 +12,9 @@ class Professor extends Model
     protected $table = 'professors';
 
     protected $fillable = ['nomeProf', 'emailProf', 'telefoneProf', 'nRegistro', 'titulacao', 'salario', 'qtdAulasMes', 'valorHrAulaProf'];
+
+    public function aulas()
+    {
+        return $this->hasMany(Aula::class, 'profAula', 'id');
+    }
 }

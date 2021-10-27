@@ -78,7 +78,7 @@
                                             R$ {{ $professor ->salario}} 
                                         </td>
                                         <td>
-                                            {{ $professor ->qtdAulasMes}}
+                                            {{ $professor ->aulas->count()}}
                                         </td>
                                         <td>
                                             R$ {{ $professor->valorHrAulaProf}}

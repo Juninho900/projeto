@@ -31,7 +31,6 @@ class StoreUpdateProfessor extends FormRequest
             'nRegistro' => 'required|min:3|max:10',
             'titulacao' => 'required',
             'salario' => 'required|min:1|max:15',
-            'qtdAulasMes' => 'required|min:1|max:5',
             'valorHrAulaProf' => 'required|min:1|max:10'
         ];
     }

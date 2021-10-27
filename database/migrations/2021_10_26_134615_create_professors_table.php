@@ -22,7 +22,6 @@ class CreateProfessorsTable extends Migration
             $table->string('nRegistro',10);
             $table->string('titulacao');
             $table->double('salario',15);
-            $table->double('qtdAulasMes',5);
             $table->double('valorHrAulaProf',10);
             $table->timestamps();
         });
