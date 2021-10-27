@@ -6,7 +6,7 @@
     <ul>
         <li><strong>E-mail:</strong> {{ $aluno->email }}</li>
         <li><strong>Telefone:</strong> {{ $aluno->telefone }}</li>
-        <li><strong>Data de nascimento:</strong> {{ $aluno->dtNasc }}</li>
+        <li><strong>Data de nascimento:</strong> {{ date('d/m/Y', strtotime($aluno->dtAulaProf)) }}</li>
         <li><strong>Situação:</strong>
             @if($aluno->situacao == 0)
                 <span>Inativo</span>

@@ -18,17 +18,20 @@
         @method('put')
         <p>Título da aula: <input type="text" name="tituloAula" id="tituloAula" value="{{ $aula->tituloAula }}"></p>
         <label for="curso"><p>Curso: </p></label>
-        <select name="curso" id="curso" value="{{ $aula->curso }}">
+        <select name="curso" id="curso">
+            <option value="{{ $aula->curso }}" selected>{{ $aula->curso}}</option>
             <option value="Administração">Administração</option>
             <option value="Direito">Direito</option>
             <option value="Educação Física">Educação Física</option>
             <option value="Engenharia de Computação">Engenharia de Computação</option>
             <option value="Engenharia de Software">Engenharia de Software</option>
         </select>
+        <br>
         <label for="profAula"><p>Aula do professor: </p></label>
         <select name="profAula" id="profAula" value="{{ $aula->profAula }}">
+        <option value="{{ $aula->profAula }}" selected>{{ $aula->professor->nomeProf }}</option>
             @foreach($professors as $professor)
-                <option value="{{ $professor->id }}" {{$company->profAula == $professor->id  ? 'selected' : ''}}>{{ $professor->nomeProf}}</option>
+                <option value="{{$professor->id}}">{{ $professor->nomeProf}}</option>
             @endforeach
         </select>
         <p>Data da aula: <input type="date" name="dtAulaProf" id="dtAulaProf" value="{{ $aula->dtAulaProf }}"></p>

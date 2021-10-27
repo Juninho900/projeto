@@ -18,7 +18,7 @@ class AulaController extends Controller
     public function create()
     {
         $professors = Professor::all();
-        return view('admin.aulas.create',compact('professors'));
+        return view('admin.aulas.create', compact('professors'));
     }
 
     public function store(StoreUpdateAula $request)
@@ -57,8 +57,9 @@ class AulaController extends Controller
         {
             return redirect()->back();
         }
-
-        return view('admin.aulas.edit', compact('aula'));
+        
+        $professors = Professor::all();
+        return view('admin.aulas.edit', compact('aula','professors'));
     }
 
     public function update(StoreUpdateAula $request, $id)
